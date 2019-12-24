@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	/*
+		清除浮动(扩展盒子高度 ,解决浮动导致盒子塌陷问题) :
+			1.手动设置容器高度 (不适用于高度不确定的场景)
+			
+			2.使用clear 清除浮动(可以使用在任何场景):
+			具体实现 : 在使用浮动的容器的【末尾】处追加一个空白的【块元素】 ,设置css 属性cleath:both;
+			
+			3.(有场景使用限制)给父容器设置 overflow:hidden; 清除浮动
+			
+			
+			4. H5 候补 (::after)
+				
+	
+	**/
+	.container{
+		width:1000px;
+		margin:50px auto;
+		border:3px solid red;
+		/*height:500px;*/
+		
+		overflow:hidden;
+		}
+	.box{
+		width:200px;
+		height:200px;
+		}
+		
+	.box1{
+		background-color:red;
+		float:left;
+		
+		}	
+	
+	.box2{
+		background-color:green;
+		float:right;
+		height:500px;
+		}	
+		
+	.box3{
+		background-color:blue;
+		float:left;
+		height:300px;
+		}
+	
+	.box4{
+		height:200px;
+		background-color:orange;
+		}
+		
+	.clearfix{
+		clear:both; /*清除两侧浮动*/
+		}					
+</style>
+</head>
+
+<body>
+	<div class="container">
+    	<div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+       <!-- <div class="clearfix"></div>-->
+    </div>
+    
+    <div class="box4"></div>
+</body>
+</html>

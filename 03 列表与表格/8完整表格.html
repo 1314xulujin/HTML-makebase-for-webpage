@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	table{
+		width:800px;
+		margin:50px auto;
+		background-color:#f9f9f9;
+		/*border:1px solid #ccc;*/
+		border-top:1px solid #ccc;
+		border-left:1px solid #ccc;
+		
+		/*去除边框(单元格)之间的间距**/
+		border-spacing:0;
+		}
+		
+	th,td{
+		/*border:1px solid #ccc;*/
+		border-bottom:1px solid #ccc;
+		border-right:1px solid #ccc;
+		line-height:30px;
+		text-align:center;
+		}	
+	.danger{
+		background-color:red;
+		color:#fff;
+		}	
+</style>
+</head>
+
+<body>
+<!--
+border="1"
+bgcolor="#006699"
+width="800"
+align="center"
+
+cellpadding="0"
+cellspacing="0"
+-->
+	<table>
+    	<!--表头 (按需)-->
+    	<thead>
+        	<tr>
+            	<th width="100">编号</th>
+                <th width="200">日期</th>
+                <th width="200">事项</th>
+                <th width="200">金额</th>
+            </tr>
+        </thead>
+    	
+       <!-- 表格正文-->
+       <tbody>
+       		<tr>
+            	<td>1</td>
+                <td>2019年6月4日16:59:55</td>
+                <td>大保健</td>
+                <td>￥100.00</td>
+            </tr>
+            <tr>
+            	<td>2</td>
+                <td>2019年6月4日16:59:55</td>
+                <td>大保健</td>
+                <td class="danger">￥10000.00</td>
+            </tr>
+            <tr>
+            	<td>3</td>
+                <td>2019年6月4日16:59:55</td>
+                <td>大保健</td>
+                <td>￥100.00</td>
+            </tr>
+       </tbody>
+       
+      <!-- 表格底部-->
+      <tfoot>
+      		<tr>
+            	<td>总计</td>
+                <td colspan="3">￥11000.00</td>
+            </tr>
+      </tfoot> 
+    </table>
+</body>
+</html>

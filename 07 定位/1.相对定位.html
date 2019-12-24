@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	/*
+		相对定位特性:
+			1.属于标准文档流 ,显示方式与原来没区别
+			2.相对自身原来位置进行偏移 , 不会对周边的元素造成影响(即使偏移,也会保留原位置)
+			
+			3.(一般情况下不会给相对定位的元素使用偏移),"贡献"属性 它的实际用于给绝对定位做"嫁衣"
+			4.一般用于一些容器(父级容器,或者需要给绝对定位做参照的容器)
+			
+			
+			四个方向偏移:	left / right / top  / bottom 
+			单位: px  / 百分比 (相对于父容器宽度的比例)
+			
+	*/
+	.container{
+		width:1000px;
+		height:600px;
+		margin:50px auto;
+		border:1px solid red;
+		}
+	
+	.box{
+		position:relative;
+		/*bottom:200px;*/
+		/*left:200px;*/
+		/*right:200px;*/
+		left:50%;
+		width:200px;
+		height:200px;
+		background-color:green;
+		}
+	 		
+</style>
+</head>
+
+<body>
+	<div class="container">
+    	<div class="box">box</div>
+        <p>相对自身原来位置进行偏移</p>
+    </div>
+</body>
+</html>

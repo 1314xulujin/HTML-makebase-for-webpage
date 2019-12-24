@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	/**设置边框
+		
+		主要设置(四个方向):
+			1.(必须)border-style  边框样式 :solid(实线) / dashed(虚线) / double(双线)/ dotted(点状) / none(无边框)
+				border-top-style: 上边框样式
+				border-right-style: 右边框样式
+				border-bottom-style: 底边框样式
+				border-left-style:  左边框样式
+				
+			2.border-color  边框颜色 (默认为黑色)
+				border-top-color
+				border-right-color
+				border-bottom-color
+				border-left-color
+			
+			
+			3.border-width 	边框粗细 : 具体的像素值(px)  默认为1px
+				border-top-width
+				border-right-width
+				border-bottom-width
+				border-left-width
+			
+	
+	*/
+	.box{
+		width:200px;
+		height:200px;
+		background-color:#f9f9f9;
+		
+		border-top-style:solid;
+		border-right-style:dashed;
+		border-bottom-style:double;
+		border-left-style:dotted;
+		
+		border-left-width:10px;
+		border-right-width:10px;
+		
+		border-top-color:red;
+		border-left-color:green;
+		border-right-color:pink;
+		border-bottom-color:purple;
+		
+		/**边框简写:
+			可以对一个方向简写(同时设置一个方向的边框样式\粗细\颜色)
+			border-top:10px red solid;
+			border-left:10px red solid;
+			border-right:10px red solid;
+			border-bottom:10px red solid;
+			
+			
+			同时设置四个方向的颜色\样式\粗细
+			border:10px solid red;
+		
+		**/
+		}		
+	
+</style>
+</head>
+
+<body>
+	<div class="box"></div>
+</body>
+</html>

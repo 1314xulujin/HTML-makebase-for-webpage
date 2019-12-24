@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>	
+		/**清除样式**/
+		*{
+			padding:0;
+			margin:0;
+		 }
+
+		.box{
+			width:200px;
+			height:200px;
+			background-color:red;
+			
+			/**1.设置块元素, 水平自动居中: 前提是必须设置宽度 及块元素有效.***/
+			margin-left:auto;
+			margin-right:auto;
+			
+/*			margin-top:auto;
+			margin-bottom:auto;*/
+			/*margin-left:620px;*/
+			
+			}
+			
+		.box1{
+			margin-top:100px;
+			margin-bottom:100px;
+			}	
+		/**
+			2.垂直方向的外边距,如有重叠,则以最大的一个外边距为主.
+		**/
+		.box2{
+			margin-top:150px;
+			}	
+		span{
+			background-color:green;
+			margin-left:200px;
+			/**3.行内元素不支持垂直方向的外边距**/
+			margin-top:500px;
+			}	
+</style>
+</head>
+
+<body>
+	<div class="box box1">教育改变生活!1</div>
+    <div class="box box2">教育改变生活!2</div>
+    <span>哈哈哈哈哈</span>
+</body>
+</html>

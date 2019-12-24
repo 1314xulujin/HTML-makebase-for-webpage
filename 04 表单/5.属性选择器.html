@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	/**属性选择器: 通过元素属性的特征进行匹配元素*/
+	/**1.匹配具有某个属性的元素*/
+	a[href]{
+		color:red;
+		}
+		
+	/**2.匹配具有某个属性属性值为指定值的元素*/	
+	a[href="baidu.com"]{
+		color:purple;
+		}	
+	
+	/**3.匹配具有某个属性及属性值以指定值开头的元素**/	
+	a[href^="http://"]{
+		color:yellow;
+		}
+	
+	/**4.匹配具有某个属性及属性值以指定值结尾的元素**/	
+	a[href$=".cn"]{
+		color:pink;
+		}
+	
+	/**5.匹配具有某个属性及属性值包含指定值的元素*/
+	a[href*="baidu"]{
+		color:cyan;
+		}	
+</style>
+</head>
+
+<body>
+	<a>百度</a>
+    <a href="http://www.baidu.com">百度1</a>
+    <a href="http://www.taobao.com">百度2</a>
+    <a href="baidu.com">百度3</a>
+    <a href="jd.com">百度4</a>
+    <a href="jd.cn">百度5</a>
+</body>
+</html>

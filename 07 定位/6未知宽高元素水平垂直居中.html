@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	/*
+		需求: 让box 再container中水平和垂直居中?
+	*/
+	.container{
+		position:relative;
+		width:1000px;
+		margin:0 auto;
+		height:600px;
+		border:1px solid red;
+		}
+	
+	.box{
+		
+		/*已知宽高:
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin-left:-50px;
+		margin-top:-50px;*/
+		
+		width:100px;
+		height:100px;
+		background-color:red;		
+		}	
+		
+	#box1 .box{
+		/*解决方案一 : 使用css3 位移 (IE9+) **/
+		position:absolute;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%); /*css3 中的位移:以自身宽高为参照 **/ 
+		}
+	
+	#box2{
+		/**解决方案二 : 使用css3 弹性盒子布局 : flex (IE10 +)**/
+		display:flex;
+		justify-content:center; /*水平居中*/
+			
+		}	
+	#box2 .box{
+		align-self:center;/*垂直居中**/
+		}	
+		
+		/**解决方案三: 使用表格布局 (表格中单元格默认垂直居中) (IE8+)
+			table  >  cell > 需要居中的盒子
+		
+		**/	
+	#box3{
+		display:table;/*1.设置显示方式为 表格**/
+		
+		}
+	#box3 .td{
+		display:table-cell;/*2.设置显示为单元格 */
+		text-align:center;/**3.设置显示为水平居中*/
+		vertical-align:middle;/**4.设置显示为垂直居中*/
+		}	
+	#box3 .box{
+		display:inline-block;/*5.设置显示为行内/行内块*/
+		}		
+</style>
+</head>
+
+<body>
+	<div class="container" id="box1">
+    	<div class="box">方案1</div>
+    </div>
+    
+    <div class="container" id="box2">
+    	<div class="box">方案2</div>
+    </div>
+    
+     <div class="container" id="box3">
+    	<div class="td">
+        	<div class="box">方案3</div>
+        </div>
+    </div>
+</body>
+</html>

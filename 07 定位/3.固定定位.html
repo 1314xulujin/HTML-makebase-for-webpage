@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	/*
+		固定定位特性:
+			1.释放当前位置 ,形成"块级框"
+			
+			2.固定在浏览器窗口的某个位置(不会跟随网页的滚动而变化)
+			
+			四个方向偏移:	left / right / top  / bottom 
+			单位: px  / 百分比 (相对于父容器宽度的比例)
+			
+	*/
+	.container{
+		position:relative;
+		width:1000px;
+		height:600px;
+		margin:50px auto;
+		border:1px solid red;
+		}
+	
+	.box{
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:200px;
+		height:200px;
+		background-color:green;
+		}
+	 		
+</style>
+</head>
+
+<body>
+	<div class="container">
+    	<div class="box">box</div>
+        <p>相对自身原来位置进行偏移!!!!!!!!!!!!!!!!!</p>
+        <div style="height:3000px;background:linear-gradient(to bottom,red,green);"></div>
+    </div>
+</body>
+</html>

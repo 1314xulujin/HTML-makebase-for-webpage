@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>百度登录</title>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+	<!--遮罩层-->
+	<div id="mask"></div>
+    <!-- 登录表单-->
+    <div class="login-box">
+    	<button class="close"></button>
+    	<form class="login-form" id="loginFormUsername">
+        	<p class="login-logo">用户名密码登录</p>
+            <div class="item">
+            	<input type="text" name="username" placeholder="手机/邮箱/用户名"/>
+            </div>
+              <div class="item">
+            	<input type="password" name="password" placeholder="密码"/>
+            </div>
+            <p class="autologin">
+            	<label><input type="checkbox" />下次自动登录</label>
+            </p>
+            <button class="btn-login">登录</button>
+            <p>
+            <a href="#" class="left">忘记密码？</a> <a href="#" class="right">短信快捷登录</a>
+            </p>
+        </form>
+        <form class="login-form" id="loginForQrcode">
+        	<p class="login-logo">扫码登录</p>
+            <div class="item" style="text-align:center;">
+            	<img width="60%" src="images/qrcode.png" class="Qrcode"/>
+            </div>
+            <p style="text-align:center;">
+请使用百度App扫码登录</p>
+          
+   
+        </form>
+        <div class="login-other">
+        	<a href="javascript:void(0)" onclick="changeLoginType()">用户名登录</a>
+            <span class="line"></span>
+            <a href="#" class="loing-icon login-for-qq">QQ账号</a>
+            <a href="#" class="loing-icon login-for-weibo">微博账号</a>
+            <a href="#" class="right">立即注册</a>
+        </div>
+    </div>
+    <script>
+    	//定义一个用于切换显示的方法
+		function changeLoginType(){
+			//实现一些切换显示的代码
+			//其实就是控制扫码登录隐藏 ,用户密码显示过程
+			loginFormUsername.style.display="block";
+			
+			loginForQrcode.style.display="none";
+			}
+    </script>
+</body>
+</html>

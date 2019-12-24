@@ -1,0 +1,70 @@
+*{
+	padding:0;
+	margin:0;
+	}
+.register-form{
+	width:1000px;
+	border:1px solid #ccc;
+	margin:50px auto;
+	}
+.register-form h3{
+	font-weight:normal;
+	font-size:14px;
+	background-color:#f9f9f9;
+	line-height:30px;
+	text-indent:10px;
+	}	
+
+.register-form label{
+	font-size:14px;
+	color:#999;
+	}	
+
+.register-form label span{
+	color:red;
+	}	
+	
+.register-form .item > label{
+	width:300px;
+	text-align:right;
+	display:inline-block;
+	}	
+.register-form .item{
+	margin:15px 0;
+	}	
+.item2{
+	display:inline-block;
+	}	
+	
+.register-form .item > input{
+	border:1px solid #ccc;
+	width:270px;
+	height:30px;
+	padding-left:10px;
+	padding-right:30px;
+	}	
+
+.register-form input[name="username"]{
+	background:url(../img/one4.jpg) no-repeat 280px;
+	}
+	
+.register-form input[type="password"]{
+	background:url(../img/one5.jpg) no-repeat 280px;
+	}	
+
+.register-form .submit-btn{
+	border:none;
+	width:300px;
+	height:35px;
+	background:#900;
+	color:#fff;
+	cursor:pointer;
+	}	
+.register-form .submit-btn:hover{
+	background-color:#F00;
+	}	
+.register-form select{
+	border:1px solid #ccc;
+	height:30px;
+	width:80px;
+	}	

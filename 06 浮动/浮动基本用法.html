@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	/**
+		使用浮动后的特性:
+			1.会释放当前元素所占位置(布局层已经漂浮)
+			2.使用浮动后两个元素间会紧密贴合在一起
+			3.使用浮动后多个元素间顶部对齐
+			
+			4.使用浮动后元素会脱离标准文档流(之前块级行内的特性都会相违背),形成 "块级框".
+			
+		
+		"坍塌"(塌陷)现象 :(没有设置固定高度时) 当一个盒子中【所有子元素】都已经使用浮动后 ,那么该元素的高度就会为0
+		
+		
+		[注意] 网页布局,任何容器都应该有高度(可以是设置,也可以是由内容撑开的高度) ,如果没有高度,布局一定会出问题(重叠在一起)	
+		
+		
+	*/
+	.container{
+		width:1000px;
+		margin:50px auto;
+		border:3px solid red;
+		
+		}
+	.box{
+		width:200px;
+		height:200px;
+		}
+		
+	.box1{
+		background-color:red;
+		float:left;
+		
+		}	
+	
+	.box2{
+		background-color:green;
+		float:right;
+		height:500px;
+		}	
+		
+	.box3{
+		background-color:blue;
+		float:left;
+		height:300px;
+		}
+	
+	.box4{
+		height:200px;
+		background-color:orange;
+		}				
+</style>
+</head>
+
+<body>
+	<div class="container">
+    	<div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+    </div>
+    
+    <div class="box4"></div>
+</body>
+</html>

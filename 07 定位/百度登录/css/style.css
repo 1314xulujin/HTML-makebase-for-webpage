@@ -1,0 +1,155 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	}
+ /**:focus 焦点伪类*/	
+ *:focus{
+	 outline:none;
+	 }
+	 
+ ul,li{
+	 list-style:none;
+	 }
+ html,body{
+	 font-size:12px;
+	 font-family:"微软雅黑","Microsoft Yahei";
+	 }	 
+a{
+	text-decoration:none;
+	}	 	
+.left{
+	float:left;
+	}
+.right{
+	float:right;
+	}		
+#mask{
+	position:fixed;
+	z-index:999;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:rgba(0,0,0,.5);
+	}	
+
+.login-box{
+	position:absolute;
+	z-index:1000;
+	width:358px;
+	height:410px;
+	
+	left:50%;
+	top:50%;
+	margin-left:-179px;
+	margin-top:-205px;
+	background:#fff;
+	overflow:hidden;
+
+	}	 
+
+.login-form{
+	position:relative;
+	height:346px;
+	background-color:#fff;
+	padding:20px 30px;
+	}	
+.login-box .close{
+	position:absolute;
+	z-index:998;
+	right:20px;
+	top:12px;
+	border:none;
+	cursor:pointer;
+	width:16px;
+	height:16px;
+	background:url(../images/pass_login_icons.png) no-repeat -56px -48px;
+	}	
+.login-box .close:hover{
+	background-position:-72px -48px;
+	}	
+.login-form .login-logo{
+	background:url(../images/loginlogo.png) no-repeat;
+	height:45px;
+	padding-left:116px;
+	line-height:42px;
+	font-size:16px;
+	}
+	
+.login-form .item{
+	margin:20px 0;
+	}	
+.login-box a{
+	color:#2e82ff;
+	}	
+.login-form .item input{
+	width:100%;
+	height:40px;
+	padding:0 10px;
+	border:1px solid #ccc;
+	}
+.login-form .item input:focus{
+	border:1px solid #069;
+	}	
+.login-form .autologin *{
+	vertical-align:middle;
+	}
+.login-form .btn-login{
+	display:block;
+	width:100%;
+	border-radius:3px;
+	border:none;
+	background-color:#4490f7;
+	height:40px;
+	color:#fff;
+	margin:15px 0;
+	font-weight:bold;
+	font-size:14px;
+	}			
+.login-other{
+	height:64px;
+	background-color:#F0F6FF;
+	padding:0 30px;
+	line-height:64px;
+	
+	}	
+.login-other *{
+	vertical-align:middle;
+	font-size:14px;
+	}
+.login-other .line{
+	display:inline-block;
+	height:10px;
+	width:1px;
+	background-color:#2e82ff;
+	margin:0 12px 0 20px;
+	}	
+.login-other .loing-icon{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	line-height:999;
+	font-size:0;
+	color:transparent;
+	overflow:hidden;
+	background-image:url(../images/loginv4.png);
+	}
+.login-other .login-for-qq{
+	background-position:-6px -52px;
+	}	
+
+.login-other .login-for-weibo{
+	background-position:-56px -30px;
+	}	
+
+#loginFormUsername{
+	display:none;
+	}	
+	
+.Qrcode{
+	transition:all 2s;
+	}	
+.Qrcode:hover{
+	transform:translateX(-200px);
+	}	

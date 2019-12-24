@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	/***3.后代选择器:两个嵌套层级关系的选择器, 嵌套的选择器在前然后空格被嵌套的选择器**/
+	#box p{
+		color:red;	
+		}
+	
+	/**4.子元素选择器:两个层级关系中,使用 > 连接 ,只作用于直接子元素*/	
+	#box>p{
+		color:green;
+		font-size:30px;
+		}
+			
+</style>
+</head>
+
+<body>
+	<div id="box">
+    	<p>这是一个p标签</p>
+        <span>这是一个span标签</span>
+        <div>
+        	<p>这是一个重孙子的p</p>
+        </div>
+    </div>
+    <p>哈哈哈哈哈哈哈哈</p>
+</body>
+</html>

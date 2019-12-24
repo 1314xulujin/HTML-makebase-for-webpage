@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	/*
+		相对定位特性:
+			1.使用绝对定位的元素会释放自身位置.
+			
+			2.使用绝对定位的元素会形成"块级框".
+			
+			3.(非固定)偏移默认以浏览边界作为参照进行偏移
+			
+			4.参照对象:如果使用绝对定位的元素,能够从它的祖先级元素中,找到一个已经使用定位的元素,则以一个【最近】【已经定位:relative / absolute / fixed】的【祖先级元素】,作为偏移的参照对象,进行偏移 ,如果没有则浏览器边界为参照进行偏移.
+			
+			5.常见问题：经常会忽略参照元素的相对定位 ，导致元素布局混乱。
+			
+			
+			四个方向偏移:	left / right / top  / bottom 
+			单位: px  / 百分比 (相对于父容器宽度的比例)
+			
+	*/
+	.container{
+		position:relative;
+		width:1000px;
+		height:600px;
+		margin:50px auto;
+		border:1px solid red;
+		}
+	
+	.box{
+		position:absolute;
+		left:400px;
+		
+		width:200px;
+		height:200px;
+		background-color:green;
+		}
+	 		
+</style>
+</head>
+
+<body>
+	<div class="container">
+    	<div class="box">box</div>
+        <p>相对自身原来位置进行偏移!!!!!!!!!!!!!!!!!!!!!!!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	/**1.并集选择器: 多个选择器之间通过逗号隔开 , 同时声明相同样式**/
+	.box1,.box2{
+		width:200px;
+		height:200px;
+		background-color:red;
+		}	
+	
+	/**2.交集选择器:由两个选择器构成,取两个选择器之间的交集部分,第一选择器为标签选择器,第二为类或者ID(中间不能有空格)**/	
+	
+	p.p1{/**匹配p标签中并且具有类名为p1的元素*/
+		color:red;
+		font-size:30px;
+		}
+	
+		
+</style>
+</head>
+
+<body>
+	<p class="p1">这是一个p标签</p>
+	<p>哈哈哈哈哈哈</p>
+	<hr/>
+	<div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="p1">这是一个div</div>
+</body>
+</html>

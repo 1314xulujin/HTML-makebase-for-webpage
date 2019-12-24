@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	.box{
+		width:200px;
+		height:200px;
+		background-color:red;
+		
+		padding:50px;
+		border:20px solid green;
+		margin:50px;
+		
+		/**
+			设置盒子模型的计算模式
+				1.content-box: 默认值
+				
+				2.border-box
+		*/
+		box-sizing:border-box;
+		}
+		/***
+		盒子的尺寸:
+		content-box:
+		盒子宽度 =  内容宽度 + 左右两边的内边距 + 左右两边的边框.
+		盒子高度 =  内容高度 + 上下两边的内边距 + 上下两边的边框.
+		
+		(实际中就是简化了计算的工作量)border-box: 盒子的尺寸按照css设置的宽高属性为准, 如果有内边距,边框,则会向内侧缩小展示.
+		
+		*/
+</style>
+</head>
+
+<body>
+	<div class="box">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</div>
+</body>
+</html>

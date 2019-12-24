@@ -1,0 +1,163 @@
+*{
+	padding:0;
+	margin:0;
+	}
+
+a{
+	text-decoration:none;
+	color:#666;
+	}
+img{
+	border:none;
+	}
+html,body{
+	font-family:"微软雅黑","Microsoft Yahei";
+	font-size:12px;
+ }	
+		
+/*定义常用公共样式类 **/		
+.left{
+	float:left;
+	}
+	
+.right{
+	float:right;
+	}
+	
+.clearfix{
+	clear:both;
+	}	
+
+.wrap{
+	width:990px;
+	margin:0 auto;
+	
+	/*height:100px;*/
+	/*background-color:red;*/
+	
+	}
+	
+/*头部样式**/
+#top{
+	margin:10px 0 15px 0;
+	overflow:hidden;
+	}	
+	
+#top span{
+	font-size:24px;
+	color:#666;
+	margin-top:12px;
+	margin-left:20px;
+	}		
+		
+/**banner 区域样式*/
+#banner{
+	background-color:#E93854;
+	}
+#banner .wrap{
+	height:475px;
+	background:url(../images/banner.png) no-repeat;
+	}		
+
+.login-form{
+	width:308px;
+	height:240px;
+	padding:20px;
+	margin-top:40px;
+	background-color:#fff;
+	}	
+
+.login-form h2{
+	font-weight:normal;
+	font-size:20px;
+	color:#666;
+	}	
+.login-form h2 a{
+	font-size:14px;
+	color:#E4393C;
+	padding-left:22px;
+	background:url(../images/login-icons.png) -102px -74px no-repeat;
+	}
+.login-form h2 a:hover{
+	text-decoration:underline;
+	}	
+		
+.login-form .item{
+	overflow:hidden;
+	margin-top:20px;
+	border:1px solid #ccc;
+	}
+.login-form .item *{
+	float:left;
+	}	
+
+.login-form .item label{
+	width:38px;
+	height:38px;
+	background-image:url(../images/login-icons.png);
+	background-repeat:no-repeat;
+	border-right:1px solid #ccc;
+	cursor:pointer;
+	}	
+.login-form .item input{
+	border:0;
+	padding:10px 12px;
+	width:243px;
+	height:18px;
+	}	
+
+.login-form .username label{
+	background-position:0 0;
+ 	}	
+	
+.login-form .userpwd label{
+	background-position:-48px 0;
+ 	}		
+	
+.login-form .item2{
+	margin:20px 0;
+	color:#666;
+	}	
+
+.login-form .item2 input{
+	vertical-align:middle;
+	}
+
+#login-btn{
+	display:block;
+	width:100%;
+	height:40px;
+	border:none;
+	background:#e4393c;
+	font-weight:bold;
+	font-size:16px;
+	color:#fff;
+	}	
+	
+#footer{
+	text-align:center;
+	color:#666;
+	}	
+.links {
+	margin:20px 0;
+	line-height:30px;
+	}		
+
+.links a{
+	margin:0 10px;
+	}	
+.copyright{
+	}	
+/*
+盒子整个宽高 :  348  *  280 
+
+四个方向的内边距: 20 
+
+
+图标占位置: 40 * 40  = > 38 * 38 (边框)
+
+348 - (20 * 2) - 3  -  38 = 输入框盒子的宽度 267
+
+267 - (12 * 2 )  =  243
+
+*/	

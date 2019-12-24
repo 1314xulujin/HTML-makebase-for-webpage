@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+
+<!--
+	表单的数据提交方式:
+    	get: (用于获取数据)
+        	1.数据提交不安全(数据内容显示在地址栏中)
+            2.由于对于浏览器的url地址部分旧浏览器限制长度为255个字符 ,那么这样的话对于提交的数据而言就会长度限制
+            3.只能提交一些字符类型的数据(数字,字母,符合等字符)
+            4.url可以存为书签,收藏
+            5.请求可以有缓存
+            	
+        
+        
+        post: (发送(上传)数据)
+			1.数据安全提交(不显示在地址栏)
+            2.数据提交大小无上限
+            3.可以传输各种文件数据
+            4.url不可存为书签
+            5.请求不允许缓存
+            
+            
+            disabled 与 readyonly 区别:
+            	都是不能编辑
+                disabled是不可用,并且表单内容不提交
+                readyonly 表单内容会提交
+
+-->
+	<form action="#" method="get">
+    	<fieldset>
+        	<legend>XX网用户注册</legend>
+    	<p>
+        <label>账号:</label>
+        <input type="text" size="20" name="username" value="张三" readonly/></p>	
+        <p>
+        <label for="pwd">密码:</label>
+         <input id="pwd" type="password" name="userpwd" maxlength="6"/></p>	
+        <p>
+        <label>性别:</label>
+        <input type="radio" name="sex" value="man" checked/>男
+               <input type="radio" name="sex" value="women"/>女
+        </p>
+        <p>
+       <label>兴趣:</label>
+        	<input type="checkbox" name="hobby" value="h1"/>爬山
+            <input type="checkbox" name="hobby" value="h2"/>唱歌
+            <input type="checkbox" name="hobby" value="h3"/>跳舞
+            <input type="checkbox" name="hobby" value="h4"/>游泳
+            <input type="checkbox" name="hobby" value="h5" checked/>吃鸡
+        </p>
+        <p>
+        <label>城市:</label>
+        	<select name="city">
+            	<option value="bj">北京</option>
+                <option value="sh">上海</option>
+                <option value="gz">广州</option>
+                <option value="szx" selected>深圳</option>
+            </select>
+        </p>
+        <p>
+        	<label>上传头像:</label> <input type="file" name="thumb" />
+        </p>	
+        <p>	
+        	<input type="checkbox" />
+        	<input type="button" value="同意用户协议"/>
+        </p>
+        <p>
+        	<label>备注:</label>
+            <textarea name="text" cols="50" rows="20"></textarea>
+        </p>
+        <p>
+        	<input name="flag" value="这个用户有点2" type="hidden"/>
+        </p>
+        <p>
+        	<input type="submit"/>
+            <input type="reset"/>
+        </p>
+       </fieldset> 
+    </form>
+</body>
+</html>

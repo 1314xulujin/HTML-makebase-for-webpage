@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	*{
+		padding:0;
+		margin:0;}
+	ul,li{
+		list-style:none;
+		}	
+	 .container{
+		 position:relative;
+		 width:730px;
+		 height:454px;
+		 margin:50px auto;
+	}
+	 .slide .slide-img{
+		width:730px;
+		height:454px;
+		background-color:#f9f9f9;
+	 }
+	 .slide .slide-img li{
+		 display:none;
+		 }
+	.slide .slide-img li.active{
+		display:block;
+		}	 
+	.slide .slide-img a{
+		display:block;
+		}
+	.slide .slide-page{
+		position:absolute;
+		bottom:20px;
+		text-align:center;
+		width:100%;
+		
+		}	
+	.slide .slide-page li{
+		display:inline-block;
+		width:25px;
+		height:25px;
+		background-color:#ccc;
+		text-align:center;
+		line-height:25px;
+		/***css3 圆角边框*/
+		border-radius:50%;
+		cursor:pointer;
+		}
+		.slide .slide-page li.active{
+			background-color:#C00;
+			color:#fff;
+			}			
+</style>
+</head>
+
+<body>
+	<div class="container">
+    	<!--轮播图容器-->
+        <div class="slide">
+        	<!--轮播图图片容器-->
+            <ul class="slide-img">
+            	<li class="active"><a href="#"><img src="images/focus.jpg"/></a></li>
+                <li><a href="#"><img src="images/focus1.jpg"/></a></li>
+                <li><a href="#"><img src="images/focus2.jpg"/></a></li>
+                <li><a href="#"><img src="images/focus3.jpg"/></a></li>
+                <li><a href="#"><img src="images/focus4.jpg"/></a></li>
+            </ul>
+           <!-- 轮播图的按钮容器-->
+           <ul class="slide-page">
+            	<li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+           </ul>
+        </div>
+    </div>
+</body>
+</html>
